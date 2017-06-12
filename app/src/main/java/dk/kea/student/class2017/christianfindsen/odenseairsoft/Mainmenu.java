@@ -1,4 +1,4 @@
-package dk.kea.student.class2017.christianfindsen.odenseairsoft.View;
+package dk.kea.student.class2017.christianfindsen.odenseairsoft;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,10 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import dk.kea.student.class2017.christianfindsen.odenseairsoft.MainActivity;
-import dk.kea.student.class2017.christianfindsen.odenseairsoft.R;
-
-public class mainmenu extends AppCompatActivity
+public class Mainmenu extends AppCompatActivity
 {
     private Button memberlist;
     private Button createMember;
@@ -23,8 +20,21 @@ public class mainmenu extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                Intent logout = new Intent(mainmenu.this, MainActivity.class);
+                Intent logout = new Intent(Mainmenu.this, MainActivity.class);
                 startActivity(logout);
+            }
+        });
+    }
+    public void createMember()
+    {
+        createMember = (Button)findViewById(R.id.mainmenu_createMember);
+        createMember.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent createMember = new Intent(Mainmenu.this,CreateMember.class);
+                startActivity(createMember);
             }
         });
     }
@@ -35,5 +45,6 @@ public class mainmenu extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainmenu);
         logout();
+        createMember();
     }
 }

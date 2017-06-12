@@ -11,24 +11,24 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="73dp"
         android:gravity="center_vertical|center_horizontal|center"
-        android:text="Member List"/>
+        android:text="Medlems Liste"/>
 
     <Button
         android:id="@+id/mainmenu_createMember"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/mainmenu_MemberList"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="90dp"
         android:gravity="center_vertical|center_horizontal|center"
-        android:text="Create Member"
-        android:layout_below="@+id/mainmenu_MemberList"
-        android:layout_centerHorizontal="true"/>
+        android:text="Tilføj medlem"/>
 
     <Button
         android:id="@+id/mainmenu_Logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log out"
-        android:layout_marginBottom="99dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="99dp"
+        android:text="Log ud"/>
 </RelativeLayout>

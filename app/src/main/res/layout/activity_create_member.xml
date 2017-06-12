@@ -1,36 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="dk.kea.student.class2017.christianfindsen.odenseairsoft.View.createMember">
+    tools:context="dk.kea.student.class2017.christianfindsen.odenseairsoft.CreateMember">
 
-    <EditText
-        android:id="@+id/editText"
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Fornavn"
+        android:layout_alignTop="@+id/editNavn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"/>
+
+    <EditText
+        android:id="@+id/editNavn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        android:layout_marginTop="86dp"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2"/>
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8"/>
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editEfternavn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Address"
-        android:layout_below="@+id/editText"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="182dp"
-        android:layout_marginEnd="182dp"/>
+        android:layout_below="@+id/editNavn"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8"/>
+
+    <EditText
+        android:id="@+id/editAdresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEfternavn"
+        android:layout_toEndOf="@+id/textView8"
+        android:layout_toRightOf="@+id/textView8"
+        android:ems="10"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/editTelefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editAdresse"
+        android:layout_alignStart="@+id/editAdresse"
+        android:layout_below="@+id/editAdresse"
+        android:ems="10"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTelefon"
+        android:layout_alignStart="@+id/editTelefon"
+        android:layout_below="@+id/editTelefon"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adresse"
+        android:layout_below="@+id/editEfternavn"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefon"
+        android:layout_below="@+id/editAdresse"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Efternavn"
+        android:layout_below="@+id/editNavn"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_below="@+id/editTelefon"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editNavn"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editNavn"
+        android:layout_marginTop="32dp"
+        android:text="Oprettelse af medlem"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+    <Button
+        android:id="@+id/btn_create_addMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="58dp"
+        android:text="Tilføj"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"/>
+
+    <Button
+        android:id="@+id/btn_create_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_create_addMember"
+        android:layout_alignBottom="@+id/btn_create_addMember"
+        android:layout_alignEnd="@+id/editEmail"
+        android:layout_alignRight="@+id/editEmail"
+        android:text="Tilbage"/>
+
+
 </RelativeLayout>
 
 

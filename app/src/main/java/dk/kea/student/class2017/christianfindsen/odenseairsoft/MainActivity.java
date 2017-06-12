@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import dk.kea.student.class2017.christianfindsen.odenseairsoft.View.mainmenu;
+
 
 
 public class MainActivity extends AppCompatActivity
@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity
     private Button login_button;
     private EditText pw;
     private EditText userText;
-    private static final String TAG = "myActivity";
+
 
 
 
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity
 
                 if (pw.getText().toString().equals("admin")&& userText.getText().toString().equals("admin"))
                 {
-                    Intent login = new Intent(MainActivity.this, mainmenu.class);
+                    Intent login = new Intent(MainActivity.this, Mainmenu.class);
                     startActivity(login);
                 }
             }

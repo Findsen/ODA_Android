@@ -14,23 +14,10 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to Odense Airsoft. Please login"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="43dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/loginName"
-        android:layout_alignStart="@+id/loginName"/>
-
-    <EditText
-        android:id="@+id/login_pw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/loginmenu_login"
+        android:text="Velkommen til Odense Airsoft. Log venligst ind"
+        android:layout_above="@+id/loginName"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="68dp"
-        android:ems="10"
-        android:inputType="textPassword"/>
+        android:layout_marginBottom="44dp"/>
 
     <EditText
         android:id="@+id/loginName"
@@ -44,11 +31,21 @@
         android:inputType="text"
         />
 
+    <EditText
+        android:id="@+id/login_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/loginmenu_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp"
+        android:ems="10"
+        android:inputType="textPassword"/>
+
     <Button
         android:id="@+id/loginmenu_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/log_in"/>
+        android:text="log ind"/>
 </RelativeLayout>
