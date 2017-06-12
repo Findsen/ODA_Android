@@ -2,8 +2,10 @@ package dk.kea.student.class2017.christianfindsen.odenseairsoft;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 /**
  * Created by Christian Findsen on 12-06-2017.
@@ -55,5 +57,12 @@ public class DatabaseHandler extends SQLiteOpenHelper
             return false;
         else
             return true;
+    }
+
+    public Cursor searchMember(String number)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select * from "+TABLE_NAME+" where "+COL_5+" = "+number,null);
+        return res;
     }
 }

@@ -12,6 +12,7 @@
         <activity android:name=".SplashWelcome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
@@ -20,6 +21,8 @@
         <activity android:name=".CreateMember">
         </activity>
         <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".CheckMember">
         </activity>
     </application>
 

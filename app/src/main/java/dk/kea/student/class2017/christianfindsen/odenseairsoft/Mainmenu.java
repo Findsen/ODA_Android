@@ -8,11 +8,10 @@ import android.widget.Button;
 
 public class Mainmenu extends AppCompatActivity
 {
-    private Button memberlist;
-    private Button createMember;
-    private Button logout;
 
-    public void logout()
+    private Button logout,createMember,searchMember;
+
+    private void logout()
     {
         logout = (Button)findViewById(R.id.mainmenu_Logout);
         logout.setOnClickListener(new View.OnClickListener()
@@ -25,7 +24,7 @@ public class Mainmenu extends AppCompatActivity
             }
         });
     }
-    public void createMember()
+    private void createMember()
     {
         createMember = (Button)findViewById(R.id.mainmenu_createMember);
         createMember.setOnClickListener(new View.OnClickListener()
@@ -38,6 +37,20 @@ public class Mainmenu extends AppCompatActivity
             }
         });
     }
+    private void searchForMember()
+    {
+        searchMember = (Button)findViewById(R.id.searchMember);
+        searchMember.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent searchMember = new Intent(Mainmenu.this,CheckMember.class);
+                startActivity(searchMember);
+            }
+        });
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -46,5 +59,6 @@ public class Mainmenu extends AppCompatActivity
         setContentView(R.layout.activity_mainmenu);
         logout();
         createMember();
+        searchForMember();
     }
 }

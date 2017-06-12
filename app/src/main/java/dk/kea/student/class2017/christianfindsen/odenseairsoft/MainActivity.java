@@ -32,11 +32,13 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v)
             {
 
-                if (pw.getText().toString().equals("admin")&& userText.getText().toString().equals("admin"))
-                {
-                    Intent login = new Intent(MainActivity.this, Mainmenu.class);
-                    startActivity(login);
-                }
+//                if (pw.getText().toString().equals("admin")&& userText.getText().toString().equals("admin"))
+//                {
+//                    Intent login = new Intent(MainActivity.this, Mainmenu.class);
+//                    startActivity(login);
+//                }
+                Intent login = new Intent(MainActivity.this, Mainmenu.class);
+                startActivity(login);
             }
 
         });
