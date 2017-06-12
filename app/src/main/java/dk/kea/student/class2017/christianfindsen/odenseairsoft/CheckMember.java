@@ -78,6 +78,7 @@ public class CheckMember extends AppCompatActivity
                     buffer.append("Email :" + result.getString(5) +"\n");
                 }
                 showMessage("INFO om medlem",buffer.toString());
+                editSearchMember.getText().clear();
             }
         });
     }

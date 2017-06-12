@@ -65,4 +65,11 @@ public class DatabaseHandler extends SQLiteOpenHelper
         Cursor res = db.rawQuery("select * from "+TABLE_NAME+" where "+COL_5+" = "+number,null);
         return res;
     }
+
+    public Cursor getMembers()
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor data = db.rawQuery("select * from "+TABLE_NAME,null);
+        return data;
+    }
 }

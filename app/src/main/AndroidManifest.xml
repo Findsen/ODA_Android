@@ -24,6 +24,8 @@
         </activity>
         <activity android:name=".CheckMember">
         </activity>
+        <activity android:name=".MemberList">
+        </activity>
     </application>
 
 </manifest>

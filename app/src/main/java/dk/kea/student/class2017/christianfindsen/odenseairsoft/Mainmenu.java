@@ -9,7 +9,7 @@ import android.widget.Button;
 public class Mainmenu extends AppCompatActivity
 {
 
-    private Button logout,createMember,searchMember;
+    private Button logout,createMember,searchMember,mainmenu_MemberList;
 
     private void logout()
     {
@@ -21,6 +21,21 @@ public class Mainmenu extends AppCompatActivity
             {
                 Intent logout = new Intent(Mainmenu.this, MainActivity.class);
                 startActivity(logout);
+            }
+        });
+    }
+
+    private void memberList()
+    {
+        mainmenu_MemberList = (Button)findViewById(R.id.mainmenu_MemberList);
+        mainmenu_MemberList.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent memberlist = new Intent(Mainmenu.this,MemberList.class);
+                startActivity(memberlist);
+                finish();
             }
         });
     }
@@ -60,5 +75,6 @@ public class Mainmenu extends AppCompatActivity
         logout();
         createMember();
         searchForMember();
+        memberList();
     }
 }
