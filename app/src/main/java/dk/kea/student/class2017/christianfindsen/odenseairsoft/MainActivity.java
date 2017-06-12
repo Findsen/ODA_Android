@@ -1,5 +1,6 @@
 package dk.kea.student.class2017.christianfindsen.odenseairsoft;
 
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,11 +19,11 @@ public class MainActivity extends AppCompatActivity
 
 
 
+
     public void login()
     {
         pw = (EditText)findViewById(R.id.login_pw);
         userText= (EditText)findViewById(R.id.loginName);
-
 
         login_button = (Button)findViewById(R.id.loginmenu_login);
         login_button.setOnClickListener(new View.OnClickListener()

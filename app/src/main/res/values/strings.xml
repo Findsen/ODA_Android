@@ -2,4 +2,8 @@
     <string name="app_name">Odense Airsoft</string>
     <string name="log_in">Log in</string>
     <string name="fornavn"/>
+
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
