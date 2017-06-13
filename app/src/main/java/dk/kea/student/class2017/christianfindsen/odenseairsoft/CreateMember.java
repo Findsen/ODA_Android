@@ -8,9 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import dk.kea.student.class2017.christianfindsen.odenseairsoft.R;
-
-import static android.R.id.edit;
 
 public class CreateMember extends AppCompatActivity
 {
